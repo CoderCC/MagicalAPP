@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TouTiaoFactory.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -17,6 +17,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    TouTiaoFactory *factory = [TouTiaoFactory factory];
+    
+    [factory fetchRawDataOfClass:NSClassFromString(@"TouTiaoFactory") WithParameters:@{@"type": @"top"} dataSuccess:^(id  _Nullable responseData) {
+        NSLog(@"responseData:%@", responseData);
+    } dataFailure:^(NSError * _Nonnull error) {
+        NSLog(@"error:%@", error);
+    }];
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

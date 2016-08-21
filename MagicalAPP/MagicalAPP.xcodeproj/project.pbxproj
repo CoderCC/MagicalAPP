@@ -11,9 +11,10 @@
 		2339760135B4478A03FBD03E /* libPods-MagicalAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15B15DBF56640CD25EB1085 /* libPods-MagicalAPP.a */; };
 		5D5709D9356BCD9E723EB8D9 /* libPods-MagicalAPPUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423B69F2D75739AF9B8334C7 /* libPods-MagicalAPPUITests.a */; };
 		EA5FBBFB1D68937C009C5C1F /* BaseDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */; };
+		EAB45A7B1D696A89009FB51F /* TouTiaoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB45A7A1D696A89009FB51F /* TouTiaoFactory.m */; };
+		EAB45A7E1D69E67A009FB51F /* TouTiaoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB45A7D1D69E67A009FB51F /* TouTiaoModel.m */; };
 		EADBC8A01D688B4F00E202F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC89F1D688B4F00E202F4 /* main.m */; };
 		EADBC8A31D688B4F00E202F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC8A21D688B4F00E202F4 /* AppDelegate.m */; };
-		EADBC8A91D688B4F00E202F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADBC8A71D688B4F00E202F4 /* Main.storyboard */; };
 		EADBC8AC1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EADBC8AA1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld */; };
 		EADBC8AE1D688B4F00E202F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */; };
 		EADBC8B11D688B4F00E202F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADBC8AF1D688B4F00E202F4 /* LaunchScreen.storyboard */; };
@@ -49,11 +50,15 @@
 		CC156CE1728D0D07F09808AC /* libPods-MagicalAPPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicalAPPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5FBBF91D68937C009C5C1F /* BaseDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataFactory.h; sourceTree = "<group>"; };
 		EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataFactory.m; sourceTree = "<group>"; };
+		EAB45A791D696A89009FB51F /* TouTiaoFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoFactory.h; sourceTree = "<group>"; };
+		EAB45A7A1D696A89009FB51F /* TouTiaoFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoFactory.m; sourceTree = "<group>"; };
+		EAB45A7C1D69E67A009FB51F /* TouTiaoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoModel.h; sourceTree = "<group>"; };
+		EAB45A7D1D69E67A009FB51F /* TouTiaoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoModel.m; sourceTree = "<group>"; };
+		EAB45A7F1D69F539009FB51F /* FactoryType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryType.h; sourceTree = "<group>"; };
 		EADBC89B1D688B4E00E202F4 /* MagicalAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADBC89F1D688B4F00E202F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADBC8A11D688B4F00E202F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EADBC8A21D688B4F00E202F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EADBC8A81D688B4F00E202F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EADBC8AB1D688B4F00E202F4 /* MagicalAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicalAPP.xcdatamodel; sourceTree = "<group>"; };
 		EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADBC8B01D688B4F00E202F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 		EA5FBBF21D68934E009C5C1F /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				EAB45A7F1D69F539009FB51F /* FactoryType.h */,
 				EA5FBBF91D68937C009C5C1F /* BaseDataFactory.h */,
 				EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */,
 			);
@@ -137,6 +143,8 @@
 		EA5FBBF41D68934E009C5C1F /* DataFactories */ = {
 			isa = PBXGroup;
 			children = (
+				EAB45A791D696A89009FB51F /* TouTiaoFactory.h */,
+				EAB45A7A1D696A89009FB51F /* TouTiaoFactory.m */,
 			);
 			path = DataFactories;
 			sourceTree = "<group>";
@@ -151,6 +159,8 @@
 		EA5FBBF61D68934E009C5C1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAB45A7C1D69E67A009FB51F /* TouTiaoModel.h */,
+				EAB45A7D1D69E67A009FB51F /* TouTiaoModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,7 +213,6 @@
 				EA5FBBF81D68934E009C5C1F /* Views */,
 				EADBC8A11D688B4F00E202F4 /* AppDelegate.h */,
 				EADBC8A21D688B4F00E202F4 /* AppDelegate.m */,
-				EADBC8A71D688B4F00E202F4 /* Main.storyboard */,
 				EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */,
 				EADBC8AF1D688B4F00E202F4 /* LaunchScreen.storyboard */,
 				EADBC8B21D688B4F00E202F4 /* Info.plist */,
@@ -355,7 +364,6 @@
 			files = (
 				EADBC8B11D688B4F00E202F4 /* LaunchScreen.storyboard in Resources */,
 				EADBC8AE1D688B4F00E202F4 /* Assets.xcassets in Resources */,
-				EADBC8A91D688B4F00E202F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +512,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADBC8A31D688B4F00E202F4 /* AppDelegate.m in Sources */,
+				EAB45A7B1D696A89009FB51F /* TouTiaoFactory.m in Sources */,
 				EA5FBBFB1D68937C009C5C1F /* BaseDataFactory.m in Sources */,
 				EADBC8AC1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld in Sources */,
 				EADBC8A01D688B4F00E202F4 /* main.m in Sources */,
+				EAB45A7E1D69E67A009FB51F /* TouTiaoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,14 +552,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EADBC8A71D688B4F00E202F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EADBC8A81D688B4F00E202F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EADBC8AF1D688B4F00E202F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
