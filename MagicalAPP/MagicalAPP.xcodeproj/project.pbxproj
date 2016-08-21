@@ -10,9 +10,9 @@
 		017A97E4B73C2B2059024473 /* libPods-MagicalAPPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC156CE1728D0D07F09808AC /* libPods-MagicalAPPTests.a */; };
 		2339760135B4478A03FBD03E /* libPods-MagicalAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15B15DBF56640CD25EB1085 /* libPods-MagicalAPP.a */; };
 		5D5709D9356BCD9E723EB8D9 /* libPods-MagicalAPPUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423B69F2D75739AF9B8334C7 /* libPods-MagicalAPPUITests.a */; };
+		EA5FBBFB1D68937C009C5C1F /* BaseDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */; };
 		EADBC8A01D688B4F00E202F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC89F1D688B4F00E202F4 /* main.m */; };
 		EADBC8A31D688B4F00E202F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC8A21D688B4F00E202F4 /* AppDelegate.m */; };
-		EADBC8A61D688B4F00E202F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC8A51D688B4F00E202F4 /* ViewController.m */; };
 		EADBC8A91D688B4F00E202F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADBC8A71D688B4F00E202F4 /* Main.storyboard */; };
 		EADBC8AC1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EADBC8AA1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld */; };
 		EADBC8AE1D688B4F00E202F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */; };
@@ -47,12 +47,12 @@
 		A9C37C071022AF4EE352A255 /* Pods-MagicalAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicalAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicalAPP/Pods-MagicalAPP.release.xcconfig"; sourceTree = "<group>"; };
 		B15B15DBF56640CD25EB1085 /* libPods-MagicalAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicalAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC156CE1728D0D07F09808AC /* libPods-MagicalAPPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicalAPPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5FBBF91D68937C009C5C1F /* BaseDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataFactory.h; sourceTree = "<group>"; };
+		EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataFactory.m; sourceTree = "<group>"; };
 		EADBC89B1D688B4E00E202F4 /* MagicalAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADBC89F1D688B4F00E202F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADBC8A11D688B4F00E202F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EADBC8A21D688B4F00E202F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EADBC8A41D688B4F00E202F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EADBC8A51D688B4F00E202F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EADBC8A81D688B4F00E202F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EADBC8AB1D688B4F00E202F4 /* MagicalAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicalAPP.xcdatamodel; sourceTree = "<group>"; };
 		EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +118,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA5FBBF21D68934E009C5C1F /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FBBF91D68937C009C5C1F /* BaseDataFactory.h */,
+				EA5FBBFA1D68937C009C5C1F /* BaseDataFactory.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		EA5FBBF31D68934E009C5C1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA5FBBF41D68934E009C5C1F /* DataFactories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataFactories;
+			sourceTree = "<group>";
+		};
+		EA5FBBF51D68934E009C5C1F /* Depots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Depots;
+			sourceTree = "<group>";
+		};
+		EA5FBBF61D68934E009C5C1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5FBBF71D68934E009C5C1F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EA5FBBF81D68934E009C5C1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EADBC8921D688B4E00E202F4 = {
 			isa = PBXGroup;
 			children = (
@@ -143,10 +194,15 @@
 		EADBC89D1D688B4F00E202F4 /* MagicalAPP */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FBBF21D68934E009C5C1F /* BaseClasses */,
+				EA5FBBF31D68934E009C5C1F /* Controllers */,
+				EA5FBBF41D68934E009C5C1F /* DataFactories */,
+				EA5FBBF51D68934E009C5C1F /* Depots */,
+				EA5FBBF61D68934E009C5C1F /* Models */,
+				EA5FBBF71D68934E009C5C1F /* Tools */,
+				EA5FBBF81D68934E009C5C1F /* Views */,
 				EADBC8A11D688B4F00E202F4 /* AppDelegate.h */,
 				EADBC8A21D688B4F00E202F4 /* AppDelegate.m */,
-				EADBC8A41D688B4F00E202F4 /* ViewController.h */,
-				EADBC8A51D688B4F00E202F4 /* ViewController.m */,
 				EADBC8A71D688B4F00E202F4 /* Main.storyboard */,
 				EADBC8AD1D688B4F00E202F4 /* Assets.xcassets */,
 				EADBC8AF1D688B4F00E202F4 /* LaunchScreen.storyboard */,
@@ -447,8 +503,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADBC8A61D688B4F00E202F4 /* ViewController.m in Sources */,
 				EADBC8A31D688B4F00E202F4 /* AppDelegate.m in Sources */,
+				EA5FBBFB1D68937C009C5C1F /* BaseDataFactory.m in Sources */,
 				EADBC8AC1D688B4F00E202F4 /* MagicalAPP.xcdatamodeld in Sources */,
 				EADBC8A01D688B4F00E202F4 /* main.m in Sources */,
 			);
